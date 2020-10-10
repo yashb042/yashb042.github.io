@@ -6,7 +6,7 @@ var userData = [
     {
         name: "Ritu",
         video: "./video/Ritu.mp4",
-        image: "./images/userplaceholder.png",
+        image: "./images/Ritu.jpg",
         unlockTime: 0,
     },
     {
@@ -151,7 +151,7 @@ var userData = [
 
 // Render Tiles
 function renderTilesData() {
-    var bdate = new Date(2020, 9, 9);
+    var bdate = new Date(2020, 9, 11);
     var dif = Math.round(((new Date() - bdate)/1000)/60); 
     var content = "";
 
