@@ -66,7 +66,7 @@ var userData = [
     {
         name: "Mayank",
         video: "./video/Mayank.mp4",
-        image: "./images/Mayank.jpg",
+        image: "./images/Mayank1.jpg",
         unlockTime: 600,
     },
     {
@@ -108,7 +108,7 @@ var userData = [
     {
         name: "Shreyash",
         video: "./video/Shreyash.mp4",
-        image: "./images/Shreyash.jpg",
+        image: "./images/Shreyash1.jpg",
         unlockTime: 1020,
     },
     {
