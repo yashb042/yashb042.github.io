@@ -209,8 +209,8 @@ setTimeout(function(){
 }, 3000);
 
 function setAndFade(){
-    var index = Math.floor(Math.random() * 125) + 1;
-    var imagePath =  "./images/background/" + index + ".jpg";
+    var index = Math.floor(Math.random() * 35) + 1;
+    var imagePath =  "./images/bday/" + index + ".jpg";
     $('<img src="'+ imagePath +'">').on("load", function() {
         $('#image-bg').fadeOut(100);
         setTimeout(function(){
