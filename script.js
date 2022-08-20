@@ -12,7 +12,7 @@ var userData = [
     {
         name: "Abhinav",
         video: "./video/Modi.mp4",
-        image: "./images/Abhinav.jpg",
+        image: "./images/demo.jpg",
         unlockTime: 60,
     },
     {
