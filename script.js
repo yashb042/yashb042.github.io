@@ -4,7 +4,7 @@ $('.cross-button').click(function() {
 
 var userData = [
     {
-        name: "Munmum",
+        name: "Munmun",
         video: "./video/Ritu.mp4",
         image: "./images/demo.jpg",
         unlockTime: 0,
@@ -13,67 +13,67 @@ var userData = [
         name: "Gunnu",
         video: "./video/Modi.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 60,
+        unlockTime: 120,
     },
     {
         name: "Yash",
         video: "./video/Akshat.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 120,
+        unlockTime: 240,
     },
     {
         name: "Sheilja",
         video: "./video/Aniket.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 180,
+        unlockTime: 360,
     },
     {
         name: "Dixika",
         video: "./video/Anushka.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 240,
+        unlockTime: 480,
     },
     {
         name: "Rama",
         video: "./video/Arjun.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 300,
+        unlockTime: 600,
     },
     {
         name: "Vrinda",
         video: "./video/Ayan.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 360,
+        unlockTime: 720,
     },
     {
         name: "Maitri",
         video: "./video/Deepak.mpg",
         image: "./images/demo.jpg",
-        unlockTime: 420,
+        unlockTime: 840,
     },
     {
         name: "Ruman",
         video: "./video/Enakshi.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 480,
+        unlockTime: 960,
     },
     {
         name: "Riddhu",
         video: "./video/Kaushik.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 540,
+        unlockTime: 1080,
     },
     {
         name: "Sehal",
         video: "./video/Mayank.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 600,
+        unlockTime: 1200,
     },
     {
         name: "Harshita",
         video: "./video/Milind.mp4",
         image: "./images/demo.jpg",
-        unlockTime: 660,
+        unlockTime: 1320,
     },
     {
         name: "Bonus 1",
@@ -85,11 +85,16 @@ var userData = [
 
 // Render Tiles
 function renderTilesData() {
-    var bdate = new Date(2020, 9, 11);
-    var dif = Math.round(((new Date() - bdate)/1000)/60); 
+    var bdate = new Date(2022, 8, 16);
+
+    var dif = Math.round(((new Date() - bdate)/1000)/60);
+    // console.log(new Date())
+    // console.log(bdate)
     var content = "";
 
     for (var user of userData) {
+        // console.log(dif)
+        // console.log(user.unlockTime)
         var locked = dif > user.unlockTime ? "": "locked";
 
         content += '<div class="video-item ' + locked + '" data-name="' + user.name +'">'
