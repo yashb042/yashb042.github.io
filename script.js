@@ -91,7 +91,7 @@ var userData = [
 
 // Render Tiles
 function renderTilesData() {
-    var bdate = new Date(2022, 8, 12, 16);
+    var bdate = new Date(2022, 8, 12, 10);
 
     var dif = Math.round(((new Date() - bdate)/1000)/60);
     console.log(new Date())
