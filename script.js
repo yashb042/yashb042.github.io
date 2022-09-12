@@ -4,6 +4,12 @@ $('.cross-button').click(function() {
 
 var userData = [
     {
+        name: "Intro",
+        video: "./videoRupa/Intro.mp4",
+        image: "./images/Intro.png",
+        unlockTime: 0,
+    },
+    {
         name: "Munmun",
         video: "./video/Ritu.mp4",
         image: "./images/demo.jpg",
@@ -35,13 +41,13 @@ var userData = [
     },
     {
         name: "Rama",
-        video: "./video/Arjun.mp4",
+        video: "./videoRupa/Rama.mp4",
         image: "./images/demo.jpg",
         unlockTime: 600,
     },
     {
         name: "Vrinda",
-        video: "./video/Ayan.mp4",
+        video: "./videoRupa/Vrinda.mp4",
         image: "./images/demo.jpg",
         unlockTime: 720,
     },
@@ -65,7 +71,7 @@ var userData = [
     },
     {
         name: "Sehal",
-        video: "./video/Mayank.mp4",
+        video: "./videoRupa/Sehal.mp4",
         image: "./images/demo.jpg",
         unlockTime: 1200,
     },
@@ -85,16 +91,16 @@ var userData = [
 
 // Render Tiles
 function renderTilesData() {
-    var bdate = new Date(2022, 8, 16);
+    var bdate = new Date(2022, 8, 12, 16);
 
     var dif = Math.round(((new Date() - bdate)/1000)/60);
-    // console.log(new Date())
-    // console.log(bdate)
+    console.log(new Date())
+    console.log(bdate)
     var content = "";
 
     for (var user of userData) {
-        // console.log(dif)
-        // console.log(user.unlockTime)
+        console.log(dif)
+        //console.log(user.unlockTime)
         var locked = dif > user.unlockTime ? "": "locked";
 
         content += '<div class="video-item ' + locked + '" data-name="' + user.name +'">'
